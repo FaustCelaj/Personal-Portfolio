@@ -1,0 +1,258 @@
+/* menu bar styling */
+
+
+/* hero section styling */
+.hero {
+    display: flex;
+    padding: 80px 140px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 100px 25px 25px;
+}
+
+.button-main {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: 0px;
+    color: var(--Neutral-100);
+    background-color: blueviolet;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);    
+}
+
+.hero-img {
+    aspect-ratio: 1 / 1;
+    max-width: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* box shadow doesnt work for some reason */
+
+/* repositioning elements of the hero section for mobile */
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 50px;
+    }
+
+    .hero-text {
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .hero-img {
+        max-width: 70%;
+    }
+}
+
+/* project section styling */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.projects h2 , p {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 25px;
+    padding: 10px;
+}
+
+.project-card {
+    display: flex; 
+    flex: 0 0 350px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    margin: 20px 10px;
+    background-color: var(--Neutral-100);
+    border-color: var(--Neutral-300);
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-caption {
+    text-align: center;
+}
+
+.card-img {
+    max-height: 300px;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: top;
+}
+
+/* smaller image sizes for mobile */
+@media screen and (max-width: 992px) {
+    .card-img{
+        max-height: 200px;
+        max-width: 250px;  
+    }
+
+}
+
+/* daily tools section styling */
+.tools {
+    background-color: blueviolet;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.tools > h2{
+    color: var(--Neutral-100);
+}
+
+.tools > p{
+    color: var(--Neutral-100);
+}
+
+i {
+    color: var(--Neutral-100);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* programing languages section styling */
+
+.tools-1 > h4{
+    color: var(--Neutral-100);
+    text-align: center;
+}
+
+.tools-1 {
+    margin: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.lang-caption {
+    color: var(--Neutral-100);
+}
+
+.lang-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* software section styling */
+.tools-2 > h4{
+    color: var(--Neutral-100);
+    text-align: center;
+}
+
+.tools-2 {
+    margin: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.software-caption {
+    color: var(--Neutral-100);
+}
+
+.software-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.software {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* about me section styling */
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/* about image grid styling */
+
+/* .img-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+} */
+
+.img-rectangle {
+    border-radius: 10px;
+    max-width: 20em;
+    aspect-ratio: 1 / 2;
+    object-fit: cover;
+}
+
+.img-square {
+    border-radius: 10px;
+    max-width: 20em;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* media quieries
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+} */
+
+
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+  }
