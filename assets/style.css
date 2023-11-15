@@ -71,7 +71,8 @@ small {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px 100px 25px 25px;
+    padding: 30px 45px;
+    max-width: 900px;
 }
 
 .button-main {
@@ -82,18 +83,24 @@ small {
     border: 0px;
     color: var(--Neutral-100);
     background-color: blueviolet;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
+
+/* hover effect for button */
+.button-main:hover {
+    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transform: translateY(-5px);
+    scale: 1.1;
+  }
 
 .hero-img {
-    aspect-ratio: 1 / 1;
-    max-width: 50%;
+    max-width: 40%;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* box shadow doesnt work for some reason */
 
 /* repositioning elements of the hero section for mobile */
 @media screen and (max-width: 992px) {
@@ -125,7 +132,7 @@ small {
     padding-bottom: 20px;
 }
 
-.projects h2 , p {
+.projects {
     text-align: center;
 }
 
@@ -196,7 +203,7 @@ i {
 
 /* programing languages section styling */
 
-.tools-1 > h4{
+.tools-1 h4{
     color: var(--Neutral-100);
     text-align: center;
 }
@@ -226,7 +233,7 @@ i {
 }
 
 /* software section styling */
-.tools-2 > h4{
+.tools-2 h4{
     color: var(--Neutral-100);
     text-align: center;
 }
@@ -258,51 +265,58 @@ i {
 /* about me section styling */
 .about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./images/endless-constellation.png");
+    background-size: cover;
 }
 
 .about-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     text-align: center;
+    max-width: 900px;
+    padding: 30px 45px;
+    color: var(--Neutral-100);
 }
 
-/* about image grid styling */
+.about-text > h3 {
+    color: #FAFAFF;
+}
 
-/* .img-grid-container {
+.about-text > p {
+    color: #FAFAFF;
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: auto auto; */
+    gap: 1rem;
+    padding: 30px 45px 45px 80px;
 }
 
-.grid-row-span-2 {
-    grid-row: span 2;
+.grid-img {
+    max-width: 20em;
+    border-radius: 15px;
+}
+
+/* @media screen and (max-width: 1080) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 } */
 
-.img-rectangle {
-    border-radius: 10px;
-    max-width: 20em;
-    aspect-ratio: 1 / 2;
-    object-fit: cover;
+@media screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
-.img-square {
-    border-radius: 10px;
-    max-width: 20em;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-}
-
-/* media quieries
 
 @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
-        gap: 10px;
     }
-
-} */
+}
 
 
 /* Cards are split into two columns at 992px or smaller */
