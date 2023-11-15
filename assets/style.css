@@ -79,7 +79,7 @@ header {
 }
 
 /* menu element styling */
-ol {
+ul {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
@@ -89,7 +89,7 @@ ol {
     cursor: pointer;
 }
 
-li, a {
+.menu-item {
     color: var(--Neutral-100);
     padding-left: 15px;
     padding-right: 15px;
@@ -102,11 +102,11 @@ li, a {
         justify-content: center;
       }
 
-    ol {
+    ul {
         flex-wrap: wrap;
     }
 
-    a {
+    #logo {
         display: none;
     }
 }
@@ -189,6 +189,32 @@ li, a {
     text-align: center;
 }
 
+/* main project */
+.main-card {
+    display: flex; 
+    flex: 0 1 26em;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    margin: 20px 10px;
+    background-color: var(--Neutral-100);
+    border-color: var(--Neutral-300);
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+}
+.main-img {
+    max-height: 18em;
+    max-width: 26em;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: top;
+}
+
+.project-button {
+    text-transform: uppercase;
+}
+
+/* other project styling */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -229,7 +255,10 @@ li, a {
         max-height: 200px;
         max-width: 250px;  
     }
-
+    .main-img {
+        max-height: 14em;
+        max-width: 18em;
+    }
 }
 
 /* daily tools section styling */
@@ -349,7 +378,7 @@ i {
 }
 
 .grid-img {
-    max-width: 20em;
+    max-width: 18em;
     border-radius: 15px;
 }
 
@@ -357,12 +386,14 @@ i {
 @media screen and (max-width: 992px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
+        padding: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
+        padding: auto;
     }
 }
 

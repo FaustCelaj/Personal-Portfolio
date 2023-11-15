@@ -12,17 +12,17 @@
 <body>
     <header>
         <nav class="menu">
-            <a id="logo">F</a>
-            <ol>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ol>
+            <a class="menu-item">F</a>
+            <ul>
+                <a class="menu-item">Home</a>
+                <a class="menu-item" href="#projects">Projects</a>
+                <a class="menu-item" href="#about">About</a>
+                <a class="menu-item" href="#contact-section">Contact</a>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero-text">
                 <p>Welcome 👋 ! It's nice to meet you, I'm</p>
                 <h1>Faust Celaj & I'm A Fullstack Developer 💻 </h1>
@@ -31,20 +31,23 @@
             </div>
             <img class="hero-img" src="./assets/images/Faust headshot.jpeg" alt="Faust working on his laptop at a desk">
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div>
                 <h2>My Projects</h2>
                 <p>Here are some of the brands I've had a pleasure working with and a few personal projects of mine.</p>
             </div>
-            <article class="cards">
-                <figure class="project-card">
-                    <img class="card-img" src="./assets/images/digital-marketing-meeting.jpg" alt="Photo of Horiseon employees gathered around a table">
+            <article>
+                <figure class="main-card">
+                    <img class="main-img" src="./assets/images/digital-marketing-meeting.jpg" alt="Photo of Horiseon employees gathered around a table">
                     <figcaption class="project-caption">
                         <h4>Horiseon</h4>
                         <small>HTML, CSS, Github</small>
                         <p> Improvement of existing HTML and CSS code to provide a better online experience.</p>
+                        <a href="https://faustcelaj.github.io/Horiseon-Accessibility-Improvements/" class="project-button">Go to Project</a>
                     </figcaption>
-                </figure>               
+                </figure> 
+            </article>
+            <article class="cards">              
                 <figure class="project-card">
                     <img class="card-img" src="./assets/images/TSBB.png" alt="screenshot of the desgin project for the client">
                     <figcaption class="project-caption">
@@ -154,7 +157,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="about-text">
                 <h3>A little about myself</h3>
                 <p>I come from a background of digital marketing with a mix of product management + design. During my time in marketing I discovered a joy for building websites and decided to further develop my skills by learning how to code. With a passion for art and my ability to develop fully custom applications, I can deliver projects to a high degree of performance, funcionality, and with creative direction.
@@ -170,7 +173,7 @@
                 <img class="grid-img" src="./assets/images/Mount Fuji Sunset.png" alt="Sunset from Mount Fuji station">
             </div>
         </section>
-        <section class="contact">
+        <section id="contact-section" class="contact">
             <h3>Lets work together!</h3>
             <p>Fill out this quick form so I can know more about your project!</p>
             <form class="contact-form">
