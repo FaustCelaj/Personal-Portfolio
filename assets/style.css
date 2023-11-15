@@ -3,6 +3,8 @@
     --Neutral-300: #E4E4E6;
     --Neutral-400: #868690;
     --Neutral-800: #1D1D1F;
+    --box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
   }
 
 /* body styling */
@@ -57,6 +59,57 @@ small {
   
 /* menu bar styling */
 
+header {
+    align-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 1.5% 5%;
+    max-width: 90%;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 30px auto;
+}
+
+/* menu element styling */
+ol {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+li, a {
+    color: var(--Neutral-100);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* menu styling for mobile */
+
+@media screen and (max-width: 768px) {
+    .menu {
+        justify-content: center;
+      }
+
+    ol {
+        flex-wrap: wrap;
+    }
+
+    a {
+        display: none;
+    }
+}
 
 /* hero section styling */
 .hero {
@@ -83,7 +136,7 @@ small {
     border: 0px;
     color: var(--Neutral-100);
     background-color: blueviolet;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     margin-top: 15px;
 }
 
@@ -99,7 +152,7 @@ small {
     max-width: 40%;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
 }
 
 /* repositioning elements of the hero section for mobile */
@@ -129,7 +182,7 @@ small {
     align-items: center;
     gap: 40px;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 90px;
 }
 
 .projects {
@@ -155,7 +208,7 @@ small {
     background-color: var(--Neutral-100);
     border-color: var(--Neutral-300);
     border-radius: 30px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .project-caption {
@@ -183,7 +236,7 @@ small {
 .tools {
     background-color: blueviolet;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 90px;
     text-align: center;
 }
 
@@ -201,7 +254,7 @@ i {
     margin-bottom: 10px;
 }
 
-/* programing languages section styling */
+/* programing languages section + items styling */
 
 .tools-1 h4{
     color: var(--Neutral-100);
@@ -232,7 +285,7 @@ i {
     padding: 15px;
 }
 
-/* software section styling */
+/* software section + items styling */
 .tools-2 h4{
     color: var(--Neutral-100);
     text-align: center;
@@ -269,6 +322,7 @@ i {
     align-items: center;
     background-image: url("./images/endless-constellation.png");
     background-size: cover;
+    padding-bottom: 90px;
 }
 
 .about-text {
@@ -279,17 +333,17 @@ i {
 }
 
 .about-text > h3 {
-    color: #FAFAFF;
+    color: var(--Neutral-100);
 }
 
 .about-text > p {
-    color: #FAFAFF;
+    color: var(--Neutral-100);
 }
 
+/* grid and image styling */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: auto auto; */
     gap: 1rem;
     padding: 30px 45px 45px 80px;
 }
@@ -299,13 +353,7 @@ i {
     border-radius: 15px;
 }
 
-/* @media screen and (max-width: 1080) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-} */
-
+/* grid mobile styling */
 @media screen and (max-width: 992px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -319,11 +367,87 @@ i {
 }
 
 
-/* Cards are split into two columns at 992px or smaller */
+/* contact form styling */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-top: 30px;
+    padding: 60px;
+    border: 6px solid blueviolet;
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    background-color: rgb(99, 27, 166);
+  }
+
+.input-field {
+    background-color: var(--Neutral-300);
+    max-width: 90%;
+    outline: none;
+    padding: 10px 0 10px 20px;
+    margin: 5px 30px 30px 15px;
+    border: 3px solid var(--Neutral-100);
+    box-shadow: var(--box-shadow);
+    color: var(--Neutral-400);
+    border-radius: 10px;
+  }
+
+.text-area-field {
+    height: 150px;
+    padding-top: 10px;
+}
+
+.contact-form-button {
+    align-self: center;
+    max-width: fit-content;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: 0px;
+    color: blueviolet;
+    background-color: var(--Neutral-100);
+    box-shadow: var(--box-shadow);
+    margin-top: 15px;
+}
+
+::placeholder {
+    color: var(--Neutral-400);
+}
+
+/* styling contact form mobile */
 @media screen and (max-width: 992px) {
-    
-  }
-  
-  /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 768px) {
-  }
+    .contact-form {
+        width: 60%;
+        margin-top: 20px;
+        padding: 40px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 60%;
+        margin-top: 20px;
+        padding: 30px;
+      }
+}
+
+footer {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p, h5 {
+    color: var(--Neutral-100);
+}

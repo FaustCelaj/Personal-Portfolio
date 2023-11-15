@@ -10,19 +10,22 @@
 </head>
 
 <body>
-    <Header>
+    <header>
         <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a id="logo">F</a>
+            <ol>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ol>
         </nav>
-    </Header>
+    </header>
     <main>
         <section class="hero">
             <div class="hero-text">
-                <p>Welcome (wave emoji)! It's nice to meet you, I'm</p>
-                <h1>Faust Celaj & I'm A Fullstack Developer (comp emoji)</h1>
+                <p>Welcome 👋 ! It's nice to meet you, I'm</p>
+                <h1>Faust Celaj & I'm A Fullstack Developer 💻 </h1>
                 <p>I help companies and brands conect thier audience and grow their business; all with beautiful storytelling. You can find some of my work by clicking on the icons below!</p>
                 <button class="button-main"> Lets Connect</button>
             </div>
@@ -169,11 +172,22 @@
         </section>
         <section class="contact">
             <h3>Lets work together!</h3>
-            <form></form>
+            <p>Fill out this quick form so I can know more about your project!</p>
+            <form class="contact-form">
+                <input type="text" class="input-field" placeholder="Your Name..">
+                <input type="email" class="input-field" placeholder="Your Email..">
+                <select class="input-field">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <textarea type="text-area-field" class="input-field text-area-field" placeholder="Your Message.."></textarea>
+                <button type="button" class="contact-form-button"> Send Message</button>
+            </form>
         </section>
     </Main>
     <footer>
-
+        <h5>Thank you for visiting ❤️ </h5>
+        <p> &#169; Faust Celaj</p>
     </footer>
 </body>
 </html>
