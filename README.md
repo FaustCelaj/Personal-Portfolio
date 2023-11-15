@@ -9,7 +9,7 @@ I created a space where I briefly introduce myself and what I do. Following the 
 
 Some fun features that I used were sticky positioning on the menu, a two-column layout on the hero section, and a grid of images. 
 
-You can view the [live page here](https://faustcelaj.github.io/personal-portfolio/#projects).
+You can view the [live page here](https://faustcelaj.github.io/personal-portfolio).
 
 Below is a screenshot of the finished website. (screenshot was done on 4K monitor, hence the exaggerated width)
 
